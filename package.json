@@ -1,13 +1,13 @@
 {
   "name": "x-fetch-middleware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "x"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "yisbug@qq.com",
+  "license": "MIT",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
     "qs": "^6.7.0"
