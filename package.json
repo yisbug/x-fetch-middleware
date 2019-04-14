@@ -1,0 +1,18 @@
+{
+  "name": "x-fetch-middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "x"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "qs": "^6.7.0"
+  },
+  "devDependencies": {
+    "xsimpletest": "^1.0.1"
+  }
+}
