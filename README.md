@@ -1,10 +1,17 @@
-xfetch
-
+# xfetch
 一个简单的 fetch 模块，支持 nodejs & browser，支持自定义中间件，类似 koa2 的中间件用法。
+
+### Why
+
+觉得 koa2 的中间件模式很有趣，所以简单封装了一下，方便使用。
+在实际场景中，每个业务对请求都会有一定固定的需求，例如添加 token，添加 Authorization header，支持缓存，统一处理错误，等等。
+用中间件的方式自己感觉是比较清晰一些。
 
 ### Useage
 
 ```js
+const xfetch = require('x-fetch-middleware');
+
 // get /api/products
 await xfetch('/api/products');
 // get /api/products?page=1&pageSize=10
@@ -44,3 +51,6 @@ xfetch.use(async (ctx, next) => {
 // 添加多个中间件
 xfetch.use([cache, checkStatus]);
 ```
+
+### License
+MIT
